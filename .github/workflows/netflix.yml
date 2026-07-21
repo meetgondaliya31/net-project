@@ -3,6 +3,9 @@ name: netflix workflow
 on: 
     workflow_dispatch:
 
+permissions:
+  id-token: write
+  contents: read
 
 jobs:
 
@@ -46,6 +49,7 @@ jobs:
               uses: aws-actions/configure-aws-credentials@v6.2.2
               with: 
                 role-to-assume: arn:aws:iam::987020212550:role/s3-full
+                # role-session-name: github-actions
                 aws-region: ap-south-1
 
             #step 7                
