@@ -45,10 +45,8 @@ jobs:
             - name: aws login
               uses: aws-actions/configure-aws-credentials@v6.2.2
               with: 
-                role-to-assume: arn:aws:iam::987020212550:role/s3-access
+                role-to-assume: arn:aws:iam::987020212550:role/s3-full
                 aws-region: ap-south-1
-                role-session-name: github-actions
-                audiance: sts.amazonaws.com
 
             #step 7                
             - name: s3 check
