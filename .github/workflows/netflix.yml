@@ -27,3 +27,7 @@ jobs:
             #step 4
             - name: build
               run: npm run build
+
+            #step 5
+            - name: cmd
+              run: pwd
