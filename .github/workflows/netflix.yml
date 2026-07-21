@@ -49,7 +49,7 @@ jobs:
               uses: aws-actions/configure-aws-credentials@v6.2.2
               with: 
                 role-to-assume: arn:aws:iam::987020212550:role/s3-full
-                # role-session-name: github-actions
+                role-session-name: github-actions
                 aws-region: ap-south-1
 
             #step 7                
