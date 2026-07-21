@@ -47,6 +47,8 @@ jobs:
               with: 
                 role-to-assume: arn:aws:iam::987020212550:role/s3-access
                 aws-region: ap-south-1
+                role-session-name: github-actions
+                audiance: sts.amazonaws.com
 
             #step 7                
             - name: s3 check
